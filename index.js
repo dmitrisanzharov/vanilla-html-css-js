@@ -18,6 +18,15 @@ export const carsJSON = [
 		miles: 75000,
 	},
 	{
+		id: "646f18c67a2f3482720d70d8",
+		name: "red-car-3",
+		color: "lightcoral",
+		location: [53.42689512951666, -6.230291464681101],
+		icon: "https://cdn.iconscout.com/icon/premium/png-256-thumb/small-car-2392474-1993928.png?f=webp&w=48",
+		rentedOut: "not-available",
+		miles: 275000,
+	},
+	{
 		id: "646f18c67a2f3482720d70d1",
 		name: "blue-car-1",
 		color: "lightcyan",
@@ -80,15 +89,6 @@ export const carsJSON = [
 		rentedOut: "available",
 		miles: 250000,
 	},
-	{
-		id: "646f18c67a2f3482720d70d8",
-		name: "red-car-3",
-		color: "lightcoral",
-		location: [53.42689512951666, -6.230291464681101],
-		icon: "https://cdn.iconscout.com/icon/premium/png-256-thumb/small-car-2392474-1993928.png?f=webp&w=48",
-		rentedOut: "not-available",
-		miles: 275000,
-	},
 ];
 
 // export const carsJSON = [
@@ -99,8 +99,8 @@ export const carsJSON = [
 // ];
 
 const filters1 = {
-	color: ["yellow"],
-	rentedOut: ["available"],
+	color: "lightcoral",
+	rentedOut: "not-available",
 };
 
 function filterArray(arr, filt) {
@@ -127,11 +127,14 @@ function filterArray(arr, filt) {
 			// console.log(filterKey);
 			// console.log(item[filterKey]);
 			// console.log(filters1[filterKey]);
-			if (item[filterKey] === filters1[filterKey][0]) {
-				final1.push(item);
-			}
-			// return true;
+			return item[filterKey] === filters1[filterKey];
 		});
+		console.log("=================");
+		console.log(test1);
+
+		if (test1) {
+			final1.push(item);
+		}
 	});
 
 	console.log(final1.length);
