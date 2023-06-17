@@ -1,0 +1,11 @@
+Actual solution:
+> put first element as FIXED and then it will push the sticky element to the size:
+
+
+
+To create the scroll left to right:
+https://www.youtube.com/watch?v=0uskTP_iHNI
+
+
+
+

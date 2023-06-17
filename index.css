@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    border: 1px solid;
+    width: 800px;
+    height: 300px;
+    overflow-x: scroll;
+    display: flex;
+}
+
+.stickyRed{
+    min-height: 300px;
+    min-width: 200px;
+    border: 1px solid red;
+    background-color: red;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-right: 200px;
+    display: inline-block;
+    /* z-index: 2; */
+}
+
+.stickyBlue{
+    min-height: 300px;
+    min-width: 200px;
+    border: 1px solid blue;
+    background-color: blue;
+    position: fixed;
+    /* left: 200px; */
+    display: inline-block;
+    /* z-index: 1; */
+}
+
+.content{
+    display: inline;
+    white-space: nowrap;
+}
