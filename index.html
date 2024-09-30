@@ -1,23 +1,53 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Dmitri" content="Dmitri Stuff">
-    <title>My New App</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico"/>
+    <title>Sharing Live Link</title>
+    
+    <!-- Styles -->
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
 
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
 <body>
 
-    <h1>Page is live</h1>
+    <div class="container">
+        <h1>Welcome to Your Page</h1>
+        <p>This is a simple HTML template with embedded CSS and JavaScript.</p>
+        <button id="myButton">Click Me</button>
+    </div>
+    
+    <!-- Scripts -->
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+            alert("Button clicked!");
+        });
+    </script>
 
-
-    <!-- scripts  -->
-    <link rel='stylesheet' href='index.css' />
-    <script type='module' src='index.js'></script>
 </body>
-
 </html>
