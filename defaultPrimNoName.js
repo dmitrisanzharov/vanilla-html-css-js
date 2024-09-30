@@ -1,0 +1,1 @@
+export default 'var2 no name';
